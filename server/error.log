@@ -1,0 +1,10 @@
+2018/12/04 09:09:47 [emerg] 1#1: host not found in upstream "phpfpm" in /etc/nginx/conf.d/nginx.conf:17
+2018/12/04 09:14:33 [emerg] 1#1: host not found in upstream "phpfpm" in /etc/nginx/conf.d/nginx.conf:17
+2018/12/04 09:19:32 [emerg] 1#1: host not found in upstream "php-fpm" in /etc/nginx/conf.d/nginx.conf:17
+2018/12/04 10:20:16 [notice] 7#7: signal process started
+2018/12/04 10:21:03 [notice] 25#25: signal process started
+2018/12/04 10:22:34 [notice] 40#40: signal process started
+2018/12/04 10:23:37 [notice] 54#54: signal process started
+2018/12/04 10:23:51 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2018/12/04 10:25:43 [emerg] 1#1: no "events" section in configuration
+2018/12/04 10:26:24 [error] 6#6: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.19.0.2:9000", host: "0.0.0.0"
