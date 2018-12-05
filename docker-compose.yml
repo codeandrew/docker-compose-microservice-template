@@ -13,16 +13,18 @@ services:
         - ./server/access.log:/var/log/nginx/access.log
         - ./server/error.log:/var/log/nginx/error.log
 
-  website:
-      build: ./website
-      volumes:
-        - ./website/src:/usr/share/nginx/html
-      ports:
-        - "9000:9000"
-
   webservice:
       build: ./webservice
       ports:
         - 5001:80
       volumes:
         - ./webservice:/usr/src/app
+
+  website:
+      build: ./website
+      volumes:
+        - ./website/src:/usr/share/nginx/html
+      ports:
+        - "9000:9000"
+      depends_on:
+        - webservice
