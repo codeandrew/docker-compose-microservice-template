@@ -14,7 +14,7 @@ class Product(Resource):
                 'Chocolate',
                 'Fruit',
                 'Hotdog',
-                'Beer'
+                'Beer',
             ]
         }
 
